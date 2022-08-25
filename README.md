@@ -42,7 +42,8 @@ Special trend
 * A notable increase in the retention of the group after Jan 2011 can be observed from the cohort analysis.
  *  Scatterplots display various insights: 1.low recency has high frequency and few customers has low recency and high frequency 2.low recency has high monetary value and few customers has high recency and high monetary value. These one two are very seldom buyers but induce more wealth 3.Some with low frequeny and high monetary values.
 * Skewness and Kurtosis shows that frequency and monetary value are columns with thick tails and high skewness due to extreme outliers.
-** Customer segments with RFM Model**
+* 
+* **Customer segments with RFM Model..****
 Before moving to customer segments, Let's see the application of Pareto Principle – commonly referred to as the 80-20 rule on our dataset by applying it to our RFM variables.
 
 Pareto’s rule says 80% of the results come from 20% of the causes.
