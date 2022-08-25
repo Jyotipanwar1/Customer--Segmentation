@@ -42,8 +42,8 @@ Special trend
 * A notable increase in the retention of the group after Jan 2011 can be observed from the cohort analysis.
  *  Scatterplots display various insights: 1.low recency has high frequency and few customers has low recency and high frequency 2.low recency has high monetary value and few customers has high recency and high monetary value. These one two are very seldom buyers but induce more wealth 3.Some with low frequeny and high monetary values.
 * Skewness and Kurtosis shows that frequency and monetary value are columns with thick tails and high skewness due to extreme outliers.
-* 
-* **Customer segments with RFM Model..****
+ 
+* **Customer segments with RFM Model..** 
 Before moving to customer segments, Let's see the application of Pareto Principle – commonly referred to as the 80-20 rule on our dataset by applying it to our RFM variables.
 
 Pareto’s rule says 80% of the results come from 20% of the causes.
@@ -66,6 +66,26 @@ Analyzed the RFM segments and commented on the findings.
 Prepared the data for the algorithm. If the data was asymmetrically distributed, managed the skewness with log transformation. Scaled the data using StandardScaler.
 Found the optimal number of clusters(elbow method). Performed clustering using Kmeans.
 Analysed the clusters and commented on the findings.
+
+* In our case, the 80% of total revenue is not achieved by the 20% of TOP customers but approximately, it does, because they are less than our 20% TOP customers who achieve it. It would be interesting to study this group of customers because they are those who make our most revenue.
+
+Applying RFM score formula
+The simplest way to create customers segments from RFM Model is to use Quartiles. We assign a score from 1 to 4 to Recency, Frequency and Monetary. Four is the best/highest value, and one is the lowest/worst value. A final RFM score is calculated simply by combining individual RFM score numbers.
+
+Note: Quintiles (score from 1-5) offer better granularity, in case the business needs that but it will be more challenging to create segments since we will have 555 possible combinations. So, we will use quartiles.
+* Best Recency score = 4: most recently purchase. Best Frequency score = 4: most quantity purchase. Best Monetary score = 4: spent the most.
+
+* Now that we knew our customers segments we can choose how to target or deal with each segment.
+
+For example: Best Customers - Champions: Reward them. They can be early adopters to new products. Suggest them "Refer a friend".
+At Risk: Send them personalized emails to encourage them to shop.
+More ideas about what actions to perform in Ometria.
+* Conclusion - perspective from this level of customer segmentation
+To gain even further insight into customer behavior, we can dig deeper in the relationship between RFM variables.
+
+* RFM model can be used in conjunction with certain predictive models like k-means clustering, Logistic Regression and Recommendation to produce better informative results on customer behavior.
+
+* We will go for k-means since it has been widely used for Market Segmentation and it offers the advantage of being simple to implement, following Andrew Ng who advice in his Machine Learning course, start with a dirty and simple model then move to more complex models because simple implementation helps having a first glance at the data and know where/how to exploit it better.
 # Data visualization
 Country-wise analysis to demonstrate average spend. Used a bar chart to show the monthly figures.
 Made a Bar graph of top 15 products which were mostly ordered by the users to show the number of products sold
