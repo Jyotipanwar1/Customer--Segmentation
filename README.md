@@ -92,7 +92,32 @@ Made a Bar graph of top 15 products which were mostly ordered by the users to sh
 Made a Bar graph to show the count of orders vs. hours throughout the day
 Plotted the distribution of RFM values using histogram
 Visualized to compare the RFM score of the clusters using heatmap
+* On one hand, we have a negative correlation between:
 
+Recency and Frequency
+Recency and Monetary
+On the other hand, the correlation between Monetary and Frequency is positive comparing to negative ones but still not that strong.
+
+## K-means Implementation
+A common challenge with k-means is that you must tell it how many clusters you expect. Figuring out how many clusters we need is not obvious from data, thus we will try different clusters numbers and check their silhouette coefficient. The silhouette coefficient for a data point measures how similar it is to its assigned cluster from -1 (dissimilar) to 1 (similar). The elbow method can be used to determine the number of clusters as well.
+
+Note: K-means is sensitive to initializations because those initializations are critical to quality of optima found. Thus, we will use smart initialization called k-means++.
+## Conclusion - Perspective after applying k-means clustering:
+
+Unfortunately, we didn't obtain a clearly separated clusters. Clusters assignments are muddled. (It may be due to outliers who weren't removed).
+
+Limitations of k-means clustering:
+
+There is no assurance that it will lead to the global best solution.
+Can't deal with different shapes(not circular) and consider one point's probability of belonging to more than one cluster.
+These disadvantages of k-means mean that for many datasets (especially low-dimensional datasets) it may not perform as well as you might hope. Here comes Guassian Mixture Model (GMM) in help by providing greater flexibility due to clusters having unconstrained covariances and allowing probabilistic cluster assignment.
+
+Reference Python Data Science Handbook by Jake VanderPlas.
+
+Note- Further Explanation: A common practice before doing clustering: Principal Component Analysis (PCA). PCA calculates the dimensions which best maximize variance.It gives directions on how many components to consider for GMM. Basically, it does dimensionality reduction while keeping the most important features, characteristics (combinations of features best describe customers). But as we are not dealing with high dimension we won't do it for this case.
+
+Conclusion - Perspectives
+At this juncture, it makes sense to show interested stakeholders the cluster solutions and get their input. The decision should be based upon how the business plans to use the results, and the level of granularity they want to see in the clusters. What range of customer behavior from high-to-low value customers are the business stakeholders interested in exploring? And from the answer to that question various methods of clustering can be further exploited whether applied on RFM variables or directly on the transaction dataset available.
 
 
 
