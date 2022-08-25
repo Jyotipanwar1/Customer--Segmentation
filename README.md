@@ -14,3 +14,6 @@ Our goal in this Notebook is to cluster our customers to get insights in:
 * Who has the potential to be converted in more profitable customers?
 * Which customers we must retain?
 * Which group of customers is most likely to respond to our current campaign?
+
+# Data Preprocessing and EDA
+
