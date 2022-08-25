@@ -34,15 +34,22 @@ Recency
 To calculate recency, we need to choose a date point from which we evaluate how many days ago was the customer's last purchase.
 
 # Meaningful Finding
-Special group
-Group of 2009 Dec, have a high retention rate, keep remaining around 20 - 40 %
-Group of 2010 Dec, have a relatively low retention rate that keeping under 12 % afterward
+* Special Group of 2009 Dec, have a high retention rate, keep remaining around 20 - 40 %
+* Group of 2010 Dec, have a relatively low retention rate that keeping under 12 % afterward
 Special period
-All groups have a significant increase in retention rate in Oct, Nov 2010, and Nov 2011, we believe it may be related to the Black Friday events.
+* All groups have a significant increase in retention rate in Oct, Nov 2010, and Nov 2011, we believe it may be related to the Black Friday events.
 Special trend
-A notable increase in the retention of the group after Jan 2011 can be observed from the cohort analysis.
+* A notable increase in the retention of the group after Jan 2011 can be observed from the cohort analysis.
+ *  Scatterplots display various insights: 1.low recency has high frequency and few customers has low recency and high frequency 2.low recency has high monetary value and few customers has high recency and high monetary value. These one two are very seldom buyers but induce more wealth 3.Some with low frequeny and high monetary values.
+* Skewness and Kurtosis shows that frequency and monetary value are columns with thick tails and high skewness due to extreme outliers.
+** Customer segments with RFM Model**
+Before moving to customer segments, Let's see the application of Pareto Principle – commonly referred to as the 80-20 rule on our dataset by applying it to our RFM variables.
 
+Pareto’s rule says 80% of the results come from 20% of the causes.
 
+Similarly, 20% customers contribute to 80% of your total revenue. Let's verify that because that will help us know which customers to focus on when marketing new products.
+
+Applying 80-20 rule
 # Data Cleaning and preprocessing
 * Checked for missing data.Filled the null CustomerID values with 10 frequent values and equally distributed them.
 * Removed duplicate data records.
