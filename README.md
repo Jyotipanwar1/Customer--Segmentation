@@ -15,13 +15,23 @@ Our goal in this Notebook is to cluster our customers to get insights in:
 * Which customers we must retain?
 * Which group of customers is most likely to respond to our current campaign?
 
+# Goal
+The goal of the first part of this project is to create segments of wholesale customers and then try to characterize those segments based on their content. For the clusters-segments to be created multiple clustering methods were used.
+
+# data preparation
+As customer clusters may vary by geography, I’ll restrict the data to only United Kingdom customers, which contains most of our customers historical data.
 # RFM analysis
-* RFM (Recency, Frequency, Monetary) analysis is a proven marketing model for behaviour based customer segmentation.
-* It groups customers based on their transaction history in other terms– how recently (R), how often (F) and how much (M) did they buy.
-* RFM helps divide customers into various categories or in better terms into clusters to identify customers who are more likely to respond to a promotion or not... so we try to predict the next purchases of the customers
+RFM Analysis
+RFM (Recency, Frequency, Monetary) analysis is a customer segmentation technique that uses past purchase behavior to divide customers into groups.
+RFM helps divide customers into various categories or clusters to identify customers who are more likely to respond to promotions and also for future personalization services.
 
-This project focus on customer analysis and segmentation. Which help to generate specific marketing strategies targeting different groups. RFM Analysis, Cohort Analysis, and K-means Clusters were conducted on a UK-based online retail transaction dataset with 1,067,371 rows of records hosted on themMachine Learning Repository.
+RECENCY (R): Days since last purchase
+FREQUENCY (F): Total number of purchases
+MONETARY VALUE (M): Total money this customer spent.
+We will create those 3 customer attributes for each customer.
 
+Recency
+To calculate recency, we need to choose a date point from which we evaluate how many days ago was the customer's last purchase.
 
 # Meaningful Finding
 Special group
